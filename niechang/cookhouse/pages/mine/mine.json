@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-button":"/miniprogram_npm/@vant/weapp/button/index",
+    "van-divider":"/miniprogram_npm/@vant/weapp/divider/index",
+    "van-row": "/miniprogram_npm/@vant/weapp/row/index",
+    "van-col": "/miniprogram_npm/@vant/weapp/col/index"
+  },
+  "navigationBarTitleText": "我的"
+}

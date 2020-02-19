@@ -1,0 +1,40 @@
+/* pages/classify/classify.wxss */
+.classify{
+  width: 750rpx;
+  /* height: 200rpx; */
+  margin: auto;
+  /* padding-left: -30rpx; */
+  margin-top: 30rpx;
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+}
+.title{
+  padding-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.classify-box{
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+.classify-box image{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.classify-box text{
+  text-align: center;
+  position: absolute;
+  bottom: 20rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  font-size: 30rpx;
+}

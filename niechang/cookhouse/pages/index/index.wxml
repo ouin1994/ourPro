@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="home">
+  <view class="logo-box">
+    <image src="{{logo}}" class="logo"></image>
+  </view>
+</view>
+<view class="search-box" bindtap="goSearch">
+  <view>
+    <icon type="search" size="20" color="#383838" />
+    <text class="search-plac">今天想吃点什么?</text>
+  </view>
+</view>
+<view class="tips">
+  唯有美食与爱不可辜负
+</view>
+<view class="greens-box"
+  wx:for="{{greens}}"
+  wx:key="id"
+>
+  <image src="{{item.pic}}"></image>
+  <view class="green-name">{{item.name}}</view>
+  <view class="green-num">
+    <text>{{item.num}}人做过</text>
+  </view>
+</view>

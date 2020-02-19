@@ -1,0 +1,131 @@
+/* pages/mine/mine.wxss */
+
+.mine {
+  text-align: center;
+}
+
+.logo {
+  margin: 30% 0 0;
+  width: 50%;
+  height: 200rpx;
+}
+
+.txt {
+  margin-top: 20rpx;
+  font-size: 35rpx;
+}
+
+.btn-login {
+  background-color: red;
+  margin-top: 30rpx;
+  color: white;
+}
+
+.mineInf-top {
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  /* background-color: #f00; */
+  display: flex;
+}
+
+.nickname-box {
+  width: 60%;
+  text-align: left;
+  font-size: 55rpx;
+  padding-left: 10rpx;
+}
+
+.avatar-box {
+  width: 40%;
+}
+
+.userinfo-avatar {
+  margin: 0;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.mineInf-body {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+.attention {
+  width: 24%;
+  text-align: left;
+}
+
+.fans {
+  width: 24%;
+  text-align: left;
+}
+
+.share {
+  display: flex;
+  width: 52%;
+  justify-content: flex-end;
+  align-items: center;
+  /* 横着的分割View样式 *//*分割线样式*/
+}
+
+.divLine {
+  margin-top: 20rpx;
+  background: #e0e3da;
+  width: 100%;
+  height: 1rpx;
+}
+
+.mineInf-foot {
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+.mineInf-foot-top {
+  width: 50%;
+  margin: auto;
+}
+
+.chooseTitle {
+  display: inline-block;
+  padding-bottom: 15rpx;
+  letter-spacing: 3rpx;
+  font-size: 27rpx;
+  font-weight: 500;
+  /* border: 1px solid #000; */
+}
+
+.active {
+  color: #fb6550;
+  border-bottom: 1rpx solid #fb6550;
+}
+
+.mineInf-foot-body {
+  width: 98%;
+  height: 400rpx;
+  margin: auto;
+  margin-top: 35rpx;
+  border-radius: 20rpx;
+  background-color: #f2f2ef;
+}
+
+.mineInf-foot-foot {
+  /* width: 90%; */
+  margin: auto;
+  margin-top: 30rpx;
+  text-align: left;
+}
+
+.mineInf-foot-foot text {
+  font-weight: 600;
+}
+
+.collectionNum {
+  margin-top: 30rpx;
+  font-size: 27rpx;
+}
+

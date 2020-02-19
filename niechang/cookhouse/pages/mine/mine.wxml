@@ -1,0 +1,74 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>pages/mine/mine.wxml</text> -->
+<view class="mine">
+  <view wx:if="{{!hasUserInfo}}">
+    <image src="../../images/logo.gif" class="logo"></image>
+    <view class="txt">饮食有节，莫失好味，登陆查看收藏的菜谱</view>
+    <button class="btn-login" wx:if="{{!hasUserInfo && canIUse}}" bindgetuserinfo="getUserInfo" open-type="getUserInfo">登录</button>
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+  </view>
+  <view wx:else>
+    <view class="mineInf-top">
+      <view class="nickname-box">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <view class="avatar-box">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+    </view>
+    <view class="mineInf-body">
+      <view class="attention">
+        <view class="attention-num">
+          {{attentionNum}}
+        </view>
+        <view>关注</view>
+      </view>
+      <view class="fans">
+        <view>
+          {{fansNum}}
+        </view>
+        <view>粉丝</view>
+      </view>
+      <view class="share">
+        <van-button type="primary" class="btn-share" size="small" custom-style="width:70rpx" open-type="share">分享</van-button>
+      </view>
+    </view>
+    <!-- 分割线 -->
+    <!-- <view class="divLine"></view> -->
+    <van-divider />
+    <view class="mineInf-foot">
+      <view class="mineInf-foot-top">
+        <van-row>
+          <van-col span="8">
+            <view class="{{'chooseTitle '+(type==1?'active':'')}}" data-type="1" bindtap="chooseType">
+              收藏
+            </view>
+          </van-col>
+          <van-col span="8">
+            <view class="{{'chooseTitle '+(type==2?'active':'')}}" data-type="2" bindtap="chooseType">
+              菜谱 {{menu}}
+            </view>
+          </van-col>
+          <van-col span="8">
+            <view class="{{'chooseTitle '+(type==3?'active':'')}}" data-type="3" bindtap="chooseType">
+              作品 {{production}}
+            </view>
+          </van-col>
+        </van-row>
+      </view>
+      <view class="mineInf-foot-body">
+        <image src="{{defaultCollectPic}}"></image>
+      </view>
+      <view class="mineInf-foot-foot">
+        <text>我的收藏</text>
+        <view class="collectionNum">
+            {{collectionNum}}道菜谱
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!-- <button bindtap="showUserinfo">查看userinfo</button> -->

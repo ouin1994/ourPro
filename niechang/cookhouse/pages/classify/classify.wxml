@@ -1,0 +1,11 @@
+<!--pages/classify/classify.wxml-->
+<!-- <text>pages/classify/classify.wxml</text> -->
+<view>
+  <view class="classify" wx:for="{{classifications}}" wx:key="cId">
+    <view class="title">{{item.title}}</view>
+    <view class="classify-box" wx:for="{{item.dishes}}" wx:key="id">
+      <image src="{{item.pic}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
